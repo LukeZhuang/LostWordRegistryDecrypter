@@ -11,7 +11,7 @@ namespace LostWordRegistryDecrypter
         private const string m_aespw = "dYrQM2pRZMYEFEha";
         static void Main(string[] args)
         {
-            string path = @"eastreg_example_jp.ini";
+            string path = @"eastreg.ini";
             FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read);
             BinaryReader br = new BinaryReader(fs);
             string src = br.ReadString();
